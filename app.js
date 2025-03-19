@@ -9,18 +9,18 @@ function changeColorH2(color,delay)
     return new Promise((resolve,reject)=>{
         let randomNum = Math.floor(Math.random() * 5) + 1 ;
         setTimeout(()=>{
-            if(randomNum>3)
+            if( randomNum>3 )
             {
                 reject("Promise rejected");
             }
             else
             {
                 h2.style.color = color ;
+                console.log(`Color changed to ${color}.`);
                 resolve();
             }
         },delay);
-        let a = 3;
-        console.log("new number " , a+10);
+       
     });
 }
 
@@ -37,6 +37,8 @@ async function setColorH2()
     {
         console.log("Error caught");   
     }
-    
+    let a = 3;
+    console.log("new number " , a+10);
 }
+
 setColorH2();

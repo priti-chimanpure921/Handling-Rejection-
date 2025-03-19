@@ -1,0 +1,1 @@
+<h3>Rejections can be handled using try catch block .</h3>
